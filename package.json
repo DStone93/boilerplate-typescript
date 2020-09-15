@@ -1,11 +1,19 @@
 {
-  "name": "class5",
+  "name": "geralds-contracting",
   "version": "1.0.0",
-  "description": "Class 5",
+  "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "prestart": "tsc",
+    "start": "node dist/index.js"
   },
   "author": "Derrick",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "yargs": "^15.4.1"
+  },
+  "devDependencies": {
+    "@types/node": "^14.6.4",
+    "@types/yargs": "^15.0.5"
+  }
 }
