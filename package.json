@@ -4,8 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "status": "git status",
     "prestart": "tsc",
-    "start": "node dist/index.js"
+    "start": "node dist/index.js",
+    "lint-and-fix": "eslint ./src/ --ext .ts --fix"
+    
   },
   "author": "Derrick",
   "license": "ISC",
@@ -14,6 +17,10 @@
   },
   "devDependencies": {
     "@types/node": "^14.6.4",
-    "@types/yargs": "^15.0.5"
+    "@types/yargs": "^15.0.5",
+    "@typescript-eslint/eslint-plugin": "^4.1.1",
+    "@typescript-eslint/parser": "^4.1.1",
+    "eslint": "^7.9.0",
+    "typescript": "^4.0.2"
   }
 }
